@@ -33,7 +33,7 @@ var server = http.createServer(function(request, response){
               </head>
 
               <body>
-                   大清已经亡啦，陛下！
+                   <h1>大清已经亡啦，陛下！</h1>
               </body>
 
         </html>
@@ -43,7 +43,7 @@ var server = http.createServer(function(request, response){
    else if(path === '/x'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/css;charset=utf-8')
-    response.write(`body{font-size:30px;color: red;}`)
+    response.write(`h1{font-size:30px;color: red;}`)
     response.end()
       } 
     else {
